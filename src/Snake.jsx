@@ -63,7 +63,7 @@ function SnakeGame() {
           eatSound.play();
           setFood(generateFood(newSnakeBody));
           setScore((prev) => {
-            const newScore = prev + 1/2;
+            const newScore = prev + 1;
             if (newScore > highScore) {
               setHighScore(newScore);
               localStorage.setItem("highScore", newScore);
